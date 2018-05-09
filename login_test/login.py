@@ -1,33 +1,40 @@
 from xpath.xpath import XPATH
 from selenium.webdriver.common.by import By
+from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.remote.webelement import WebElement
 from driver.driver import appiumdriver
-import time
-
+DEFAULT_WAIT_TIME = 10
 class login:
-    def __init__(self,driver):
+    def __init__(self,driver,objsuite):
         self.driver = driver
+        self.objSuite = objsuite
         print self.driver
 
 
     def user_login(self,user,pwd,app):
+        """
+            :Step 1: Identify sign in button and click it
+            :Step 2: Identify Username field and click on it and finally send the input
+            :Step 3: Identify Password field and click on it and finally send the input
+            :Step 4: Click on Sign in button
+            :Step 4: Click on Nothanks option deny google settings
+            :return: NONE
+        """
         try:
             if app == 'ebay':
                 print "LOG IN TO EBAY APPLICATION IS IN PROGRESS.."
-                time.sleep(10)
-                status = self.driver.selectXpath(XPATH.login_button,20)
+                status = self.driver.selectXpath(XPATH.login_button,DEFAULT_WAIT_TIME)
                 print status
                 if status!=None:
-                    elem = self.driver.selectXpath(XPATH.user_name,10)
+                    elem = self.driver.selectXpath(XPATH.user_name,DEFAULT_WAIT_TIME)
                     elem.send_keys(user)
-                    elem1 = self.driver.selectXpath(XPATH.password,10)
+                    elem1 = self.driver.selectXpath(XPATH.password,DEFAULT_WAIT_TIME)
                     elem1.send_keys(pwd)
                     if elem and elem1!=None:
-                        stat = self.driver.selectXpath(XPATH.sign_in_button,10)
-                        time.sleep(10)
-                        stat1 = self.driver.selectXpath(XPATH.no_thanks_opt,10)
+                        stat = self.driver.selectXpath(XPATH.sign_in_button,DEFAULT_WAIT_TIME)
+                        stat1 = self.driver.selectXpath(XPATH.no_thanks_opt,DEFAULT_WAIT_TIME)
                         if stat and stat1!=None:
                             print "Logged in successfully"
                             return True
@@ -54,30 +61,4 @@ class login:
             print('exception raised in login_ebay function ' )
             print (e)
             return False
-
-    def search_product(self,productname):
-        if productname:
-            elem = self.driver.selectXpath(XPATH.home_search_bar,10)
-            print elem
-            if elem!=None:
-                self.driver.send_keys(XPATH.search_bar_after_click, productname)
-                time.sleep(10)
-                #elem1 = self.driver.selectXpath(XPATH.search_bar_after_click,20)
-                elem2 = self.driver.selectXpath(XPATH.suggest_list,20)
-                elem3 = self.driver.selectXpath(XPATH.pop_up,10)
-                elem4 = self.driver.selectXpath(XPATH.first_search_result,10)
-        elem5 = self.driver.selectXpath(XPATH.buy_it_now,10)
-        elem6 = self.driver.selectXpath(XPATH.category_selection,10)
-        elem6 = self.driver.selectXpath(XPATH.category_option,10)
-        elem7 = self.driver.selectXpath(XPATH.buy_it_now_after,10)
-        return True
-        pass
-
-
-    def findXpath(self, xpath, waitSec=1):
-        try:
-            print "Finding XPath: {}".format(str(xpath))
-            return self.driver.find_element_by_xpath(xpath)
-        except:
-            return None
 
