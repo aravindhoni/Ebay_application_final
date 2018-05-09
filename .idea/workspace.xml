@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cceb42dd-8df0-4768-bf12-c52b1368ffad" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mykey" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.log" afterPath="$PROJECT_DIR$/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_product/search_prod.py" afterPath="$PROJECT_DIR$/search_product/search_prod.py" />
-    </list>
+    <list default="true" id="cceb42dd-8df0-4768-bf12-c52b1368ffad" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +20,6 @@
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ebay_app.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ebay_app.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -546,14 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Testcase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/driver/driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -806,7 +783,7 @@
         <state relative-caret-position="269">
           <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
           <folding>
-            <element signature="e#985#996#0" expanded="true" />
+            <element signature="e#985#996#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,7 +827,7 @@
         <state relative-caret-position="282">
           <caret line="606" column="8" lean-forward="false" selection-start-line="606" selection-start-column="8" selection-end-line="606" selection-end-column="8" />
           <folding>
-            <element signature="e#825#838#0" expanded="true" />
+            <element signature="e#825#838#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -932,6 +909,14 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Ebay_App_Exercisemaster-master/testreport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
