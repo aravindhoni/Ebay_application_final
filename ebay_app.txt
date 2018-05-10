@@ -1,7 +1,6 @@
 *** Settings ***
-Variables         input.yaml
+Variables         Testdata.yaml
 Library           Testcase.ebay_shopping_001
-Library           driver.driver.appiumdriver
 Library           Collections
 Library           OperatingSystem
 
